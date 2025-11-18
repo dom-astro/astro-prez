@@ -1,55 +1,21 @@
-<!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trajet de la Lumière - Œil</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/p5-oeil.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <div class="container-main">
-        <div class="header">
-            <h1>✨ Le Trajet de la Lumière à travers l'Œil</h1>
-            <p>Cliquez et maintenez le bouton gauche de la souris pour suivre le parcours lumineux</p>
-        </div>
+  <head>
+    <link href="css/p5-oeil.css" rel="stylesheet" >
 
-        <div class="content">
-            <div class="canvas-container">
-                <div id="oeil"></div>
-            </div>
-
-            <div class="info-container">
-                <h3>📖 Étapes du trajet</h3>
-                <div id="infoContent">
-                    <div class="info-item" id="info-cornee">
-                        <strong>1️⃣ Cornée</strong><br>
-                        Première surface réfractante de l'œil. Elle dévie les rayons lumineux.
-                    </div>
-                    <div class="info-item" id="info-iris">
-                        <strong>2️⃣ Iris</strong><br>
-                        Contrôle le diamètre de la pupille pour réguler la quantité de lumière.
-                    </div>
-                    <div class="info-item" id="info-cristallin">
-                        <strong>3️⃣ Cristallin</strong><br>
-                        Lentille biconvexe qui ajuste sa courbure pour la mise au point.
-                    </div>
-                    <div class="info-item" id="info-retine">
-                        <strong>4️⃣ Rétine</strong><br>
-                        Membrane sensible à la lumière où se forme l'image inversée.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="controls">
-            <button class="btn-control" onclick="resetAnimation()">🔄 Recommencer</button>
-            <div class="status" id="status"></div>
-        </div>
-    </div>
-
+    <script src="js/p5.js"></script>
     <script src="js/p5-oeil.js"></script>
-</body>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap 5.3.2 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </head>
+  <body>
+    <div id="oeil" style="border: none"></div>
+    <div id="cornee"></div>
+    <div id="iris"></div>
+    <div id="cristallin"></div>
+    <div id="retine"></div>
+  </body>
 </html>
